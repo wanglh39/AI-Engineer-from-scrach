@@ -1,0 +1,53 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Model / embedding caches
+.cache/
+**/models--*/**
+*.onnx
+
+# Node
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local data / logs
+*.log
+# 保留笔试练习数据（否则 01/02/04 的样例日志进不了仓库）
+!10-CICD/09-writing/shell/log/**/*.log
+logs/
+data/raw/
+chroma/
+chromadb/
+*.db
+*.sqlite3
+# Python 练习脚本写出的报告
+10-CICD/09-writing/shell/log/04-python/out/
+# Temp Office files
+~$*
+_scan_secrets.py
+_redact_secrets.py
+
